@@ -4,13 +4,15 @@
  */
 package calculadora;
 
+
 /**
  *
  * @author juanj
  */
+
 public class metodos {
     private String cadena;
-    private double resultado;
+    private double resultado = 0;
     private boolean suma;
     private boolean resta;
     private boolean mult;
@@ -103,17 +105,17 @@ public metodos(){
         else if(pow==true){             
             resultado=Math.pow(resultado, Double.parseDouble(numero));
        }
-        else if(sen==true){      
-            double seno=Math.toRadians(resultado);
-            resultado=Math.sin(seno);
+        else if(sen==true){     
+            resultado = Double.parseDouble(numero);
+            resultado=Math.sin(Math.toRadians(resultado));
         }
-        else if(cos==true){         
-            double coseno=Math.toRadians(resultado);
-            resultado=Math.cos(coseno);
+        else if(cos==true){ 
+            resultado = Double.parseDouble(numero);
+            resultado=Math.cos(Math.toRadians(resultado));
         }
         else if(tan==true){
-            double tangente=Math.toRadians(resultado);
-            resultado=Math.tan(tangente);
+            resultado = Double.parseDouble(numero);
+            resultado=Math.tan(Math.toRadians(resultado));
         }
         suma=false;
         resta=false;

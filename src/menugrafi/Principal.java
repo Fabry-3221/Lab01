@@ -5,7 +5,7 @@
 package menugrafi;
 
 import guia1.Consola;
-
+import calculadora.interfaz;
 /**
  *
  * @author PC
@@ -90,11 +90,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-    Consola.main(new String[]{});
+    new interfaz().setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-    
+    Consola.main(new String[]{});
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
